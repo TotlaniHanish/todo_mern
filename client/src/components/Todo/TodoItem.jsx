@@ -4,7 +4,7 @@ import axios from "../../config/axios";
 import UserContext from "../../contexts/UserContext";
 import { toast } from "react-hot-toast";
 import AddTodoDialog from "./AddTodoDialog";
-import Loader from "../loader/loader";
+// import Loader from "../loader/loader";
 
 const TodoItem = ({ todo: { _id, name, done, createdAt, updatedAt } }) => {
     const { todos, setTodos } = useContext(UserContext);
