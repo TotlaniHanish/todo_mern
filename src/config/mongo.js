@@ -5,7 +5,7 @@ const logger = require("./winston");
 const connect = async () => {
     try {
         logger.debug("Connecting to MongoDB...");
-
+        mongoose.set("strictQuery", false);
         await mongoose.connect(process.env.MONGODB_URI, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
