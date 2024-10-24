@@ -12,7 +12,7 @@ import LoginPage from "./pages/LoginPage/LoginPage";
 import DashboardPage from "./pages/DashboardPage/DashboardPage";
 import RequireAuth from "./components/RequireAuth/RequireAuth";
 import ProfilePage from "./pages/ProfilePage/ProfilePage";
-import Loader from "./components/loader/loader";
+// import Loader from "./components/loader/loader";
 
 const App = () => {
     const [user, setUser] = useState(null);
@@ -59,7 +59,7 @@ const App = () => {
                         Loading...
                     </p> */}
                     {/* <div> */}
-                    <Loader/>
+                    {/* <Loader/> */}
                 </div>
             )}
 
