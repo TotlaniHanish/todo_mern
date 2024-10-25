@@ -19,8 +19,8 @@ const getBaseURL = () => {
             : "http://localhost:8000/api";
     } else {
         return import.meta.env.MODE !== "development"
-            ? "/api"
-            : "http://localhost:8080/api";
+            ? "http://13.60.117.191:8080/api"
+            : "http://13.60.117.191:8080/api";
     }
 };
 
