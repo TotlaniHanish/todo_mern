@@ -11,8 +11,8 @@ const getBaseURL = () => {
     console.log(method);
     if (method === 'node') {
         return import.meta.env.MODE !== "development"
-            ? "https://todo-mern-t1rv.onrender.com/api"
-            : "https://todo-mern-t1rv.onrender.com/api";
+            ? "http://13.60.117.191:5000/api"
+            : "http://13.60.117.191:5000/api";
     } else if (method === 'laravel') {
         return import.meta.env.MODE !== "development"
             ? "/api"
