@@ -16,7 +16,7 @@ const getBaseURL = () => {
     } else if (method === 'laravel') {
         return import.meta.env.MODE !== "development"
             ? "/api"
-            : "http://localhost:8000/api";
+            : "http://13.60.117.191:8000/api";
     } else {
         return import.meta.env.MODE !== "development"
             ? "http://13.60.117.191:8080/api"
